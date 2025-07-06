@@ -1,69 +1,79 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-const links = [
-  {
-    name: "GitHub",
-    url: "https://github.com/inotopei",
-  },
-  {
-    name: "X",
-    url: "https://x.com/inotopei",
-  },
-  {
-    name: "Instagram",
-    url: "https://www.instagram.com/inotopei",
-  },
-  {
-    name: "Reddit",
-    url: "https://www.reddit.com/u/inotopei",
-  },
-  {
-    name: "LinkedIn",
-    url: "https://www.linkedin.com/in/inotopei",
-  },
-  {
-    name: "YouTube",
-    url: "https://www.youtube.com/@inotopei",
-  },
-  {
-    name: "TikTok",
-    url: "https://www.tiktok.com/@inotopei",
-  },
-  {
-    name: "Pinterest",
-    url: "https://www.pinterest.com/inotopei",
-  },
-  {
-    name: "Discord",
-    url: "https://www.discord.gg/inotopei",
-  },
-  {
-    name: "Telegram",
-    url: "https://www.telegram.me/inotopei",
-  },
-  {
-    name: "Apple Music",
-    url: "https://music.apple.com/profile/inotopei",
-  },
-];
 ---
 
 <BaseLayout title="Links">
   <h1 class="text-center mb-8 font-bold text-3xl">Links</h1>
-  <div class="flex flex-col gap-4 max-w-md mx-auto">
-    {
-      links.map((link) => (
-        <a
-          href={link.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="flex items-center gap-4 p-4 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow hover:scale-[1.03] transition-transform"
-          style="text-decoration: none;"
-        >
-          <span class="font-medium text-lg">{link.name}</span>
-        </a>
-      ))
-    }
-  </div>
+  <ul class="list-disc list-inside space-y-2">
+    <li>
+      <a
+        href="https://github.com/inotopei"
+        class="text-blue-500 hover:text-blue-700 hover:underline inline-flex items-center gap-1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://x.com/inotopei"
+        class="text-blue-500 hover:text-blue-700 hover:underline inline-flex items-center gap-1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        X
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.instagram.com/inotopei"
+        class="text-blue-500 hover:text-blue-700 hover:underline inline-flex items-center gap-1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.linkedin.com/in/inotopei"
+        class="text-blue-500 hover:text-blue-700 hover:underline inline-flex items-center gap-1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.youtube.com/@inotopei"
+        class="text-blue-500 hover:text-blue-700 hover:underline inline-flex items-center gap-1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        YouTube
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.tiktok.com/@inotopei"
+        class="text-blue-500 hover:text-blue-700 hover:underline inline-flex items-center gap-1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        TikTok
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.pinterest.com/inotopei"
+        class="text-blue-500 hover:text-blue-700 hover:underline inline-flex items-center gap-1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Pinterest
+      </a>
+    </li>
+  </ul>
 </BaseLayout>
